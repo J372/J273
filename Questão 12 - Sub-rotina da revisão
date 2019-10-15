@@ -1,0 +1,23 @@
+/*DESCRIÇÃO
+ Escreva uma função que recebe 5 números inteiros e retorna a sua
+média.
+AUTOR: MARCELO PEDRO
+*/
+#include <stdio.h>
+float media1(float l, float m,float n,float o,float p,int z) {
+    return ((l+m+n+o+p)/z);
+    }
+int main(void){
+    //declarção de constante
+    const int cinco=5;
+    //declaração de variaveis
+    float a =0,b=0,c=0,d=0,e=0,media;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
+    scanf("%f",&d);
+    scanf("%f",&e);
+    media = media1(a,b,c,d,e,cinco);
+    printf("%.2f",media);
+    return 0;
+}
