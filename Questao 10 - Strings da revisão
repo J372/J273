@@ -1,0 +1,30 @@
+/*
+Questao - Strings
+Aluno: Jeremias Silva
+*/
+#include<stdio.h>
+int main(){
+  
+    const int TAM_MAXIMO=30;
+
+    char palavra1[TAM_MAXIMO], palavra2[TAM_MAXIMO];
+    int tamanho1,tamanho2,i,j;
+
+    printf("Entre com a primeira e segunda palavra: ");
+    strcpy(palavra1,gets(palavra1));
+    strcpy(palavra2,gets(palavra2));
+    
+    tamanho1 = strlen(palavra1);
+   
+    for(i=0;i<=TAM_MAXIMO;i++){
+      
+        if(palavra1[i] == ' '){
+            tamanho1-=1;
+        }
+    }
+ 
+    tamanho2 = strlen(palavra2);
+    
+    for(j=0;j<=TAM_MAXIMO;j++){
+        
+        if(palavra1[j] == ' '){
