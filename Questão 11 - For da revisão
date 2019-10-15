@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+/* Questao - For
+Aluno: Jeremias Silva */
+
+int main()
+{
+    int vet[10]= {0};
+    int i, j = 0;
+    int prim_num, repet_prim_num = 0;
+
+    printf("Entre com o primeiro numero");
+    scanf("%d", prim_num);
+
+    for(i = 0; i<10; ++i){
+        scanf("%d", vet[i]);
+    }
+
+    for (j = 0; j<vet[10]; ++j){
+    if(prim_num == vet[j])
+    repet_prim_num+=1;
+
+    }
+    printf("%i", repet_prim_num);
+
+    return 0;
+}
