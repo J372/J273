@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    const int num_max_pts = 100;
+
+    int rodadas = 1, pontos_rodada =0,pontuacao = 0;
+
+    while(pontuacao <=100){
+        printf("Entre com o numero de pontos da rodada %d: ",rodadas);
+        scanf("%d",&pontos_rodada);
+        pontuacao += pontos_rodada;
+        rodadas++;
+    }
+    return 0;
+}
