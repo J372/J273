@@ -1,30 +1,45 @@
-/*
-Questao - Strings
+/*Questao - Strings
 Aluno: Jeremias Silva
 */
 #include<stdio.h>
+
 int main(){
-  
-    const int TAM_MAXIMO=30;
-
-    char palavra1[TAM_MAXIMO], palavra2[TAM_MAXIMO];
-    int tamanho1,tamanho2,i,j;
-
-    printf("Entre com a primeira e segunda palavra: ");
-    strcpy(palavra1,gets(palavra1));
-    strcpy(palavra2,gets(palavra2));
     
-    tamanho1 = strlen(palavra1);
+    const int Tam_Max=30;
+    
+    char word1[Tam_Max], word2[Tam_Max];
+    int size1,size2 = 0;
+    int i = 0;
+    int j = 0;
+  
+    printf("Informe a primeira e segunda palavra: ");
+    strcpy(word1,gets(word1));
+    strcpy(word2,gets(word2));
    
-    for(i=0;i<=TAM_MAXIMO;i++){
-      
-        if(palavra1[i] == ' '){
-            tamanho1-=1;
+    size1 = strlen(word1);
+    
+    for(i=0;i<=Tam_Max;i++){
+        /
+        if(word1[i] == ' '){
+            size1-=1;
         }
     }
- 
-    tamanho2 = strlen(palavra2);
     
-    for(j=0;j<=TAM_MAXIMO;j++){
+    size2 = strlen(word2);
+    
+    for(j=0;j<=Tam_Max;j++){
         
-        if(palavra1[j] == ' '){
+        if(word1[j] == ' '){
+            size2-=1;
+                            }
+            }
+    
+    if(size1==size2){
+        printf("\n As palavras possuem o mesmo tamanho.");
+    }
+            else{
+                printf("\n As palavras possuem tamanhos diferentes.");
+    }
+    printf("\n Tamanho do vetor string: %d  %d\n", size1,size2);
+    return 0;
+}
