@@ -1,0 +1,23 @@
+/* recebe 10 numeros inteiros e imprime quantas vezes o primeiro numero foi repetio */
+
+int main(void){
+    //declaração de constante
+    const int TAM_MAXIMO =10;
+    //declração de variaveis
+    int vet[TAM_MAXIMO],i,j,primeiroNum,qtdPrimNum=0;
+    //entrando com o primeiro numero
+    scanf("%d",&primeiroNum);
+    //preenchendo todas as posições do vetor
+    for(i=1;i<=TAM_MAXIMO;i++){
+        scanf("%d",&vet[i]);
+    }
+    //percorrendo as posições do vetor
+    for(j=1; j<=TAM_MAXIMO;j++){
+        //se o primeiro numero for igual a algum numero digitado após, ele vai somar 1.
+        if(primeiroNum == vet[j]){
+        qtdPrimNum+=1;
+        }
+    }
+    //qtdPrimNum+=1 porque, o primeiro numero digitado também deve ser incluso na quantidade
+    printf("%i", qtdPrimNum+=1);
+    return 0;
