@@ -1,0 +1,18 @@
+int main(){
+    const int TAM_MAX_VET = 1000;
+    int vet[TAM_MAX_VET], N,i,num,soma = 0;
+    float media;
+
+    printf("Entre com a quantidade de números que deseja inserir no vetor: ");
+    scanf("%d",&N);
+
+    for(i = 1;i<=N;i++){
+
+        scanf("%d",&num);
+        soma+=num;
+
+    }
+    media= (float)soma/N;
+    printf("%.2f",media);
+    return 0;
+}
